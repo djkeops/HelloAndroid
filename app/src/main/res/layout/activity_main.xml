@@ -46,38 +46,41 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textStyle="bold"
-        android:text="Udacity"
+        android:text="@string/businessName"
         android:textSize="15sp"
         android:drawableLeft="@drawable/name"
         android:drawablePadding="10dp"/>
 
     <TextView
+        android:id="@+id/call"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textStyle="bold"
-        android:text="650-555-5555"
+        android:text="@string/phone"
         android:textSize="15sp"
         android:drawableLeft="@drawable/phone"
-        android:drawablePadding="10dp"/>
+        android:drawablePadding="10dp"
+        android:onClick="callUdacity"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textStyle="bold"
-        android:text="2465 Latham St, Mountain View, CA 94043"
+        android:text="@string/address"
         android:textSize="15sp"
         android:drawableLeft="@drawable/address"
-        android:drawablePadding="10dp"/>
+        android:drawablePadding="10dp"
+        android:onClick="showAdress"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="SIGN UP"
+        android:text="@string/buttonText"
         android:textColor="@android:color/white"
-        android:backgroundTint="#00B7EC"
+        android:backgroundTint="@color/backColor"
         android:onClick="signup"
         android:layout_margin="10dp" />
 
